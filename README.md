@@ -1,10 +1,6 @@
-بفرما — README.md کامل و نهایی، آماده‌ی کپی و پیست در مخزن. 🌿
-
-فقط یادت باشد <username> را با یوزرنیم واقعی GitHub خودت عوض کنی.
 
 ---
 
-```markdown
 # CompBio Lab
 
 > An open notebook on computational biology — tools, datasets, and research notes.
