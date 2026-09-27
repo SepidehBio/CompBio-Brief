@@ -1,22 +1,39 @@
 en:
   brand.tagline: "An open resource for computational biology"
+
   hero.eyebrow:  "CompBio Brief · Est. 2026"
   hero.title:    "An open resource for computational biology."
   hero.subtitle: "Documenting practical knowledge in computational biology, bioinformatics and biomedical data analysis — written with clarity and care."
   hero.cta.tools: "Explore tools"
   hero.cta.notes: "Read notes"
 
-  section.featured: "Recent notes"
-  section.tools:    "Tools & resources"
+  section.tools: "Tools & resources"
+  section.tools.subtitle: "Curated software for sequence analysis, single-cell work, variant interpretation and machine learning — with input, output and installation notes."
+  section.tools.link: "View all tools"
+
+  section.notes: "Recent notes"
+  section.notes.subtitle: "Short, original notes on methodology, reproducibility and the practice of computational research."
+  section.notes.link: "All notes"
+
   section.datasets: "Public datasets"
+  section.datasets.subtitle: "A short list of openly available datasets frequently used in computational biology — with organism, type and access."
+  section.datasets.link: "Browse datasets"
 
-  col.research:     "Research"
-  col.methods:      "Methods & Tools"
-  col.perspectives: "Perspectives"
+  section.tutorials: "Tutorials"
+  section.tutorials.subtitle: "Step-by-step guides for common workflows in computational biology — from raw data to interpretable results."
+  section.tutorials.link: "View all tutorials"
+  section.tutorials.empty: "Tutorials are being prepared. The first set will cover single-cell quality control, RNA-seq alignment and spatial integration."
 
-  about.title: "An open resource for computational biology"
-  about.p1: "CompBio Brief is an open space for documenting practical knowledge in computational biology, bioinformatics and biomedical data analysis."
-  about.p2: "The site brings together concise research notes, tool references, public datasets and practical workflows — written to be useful to researchers, students and computational scientists."
+  tools.count: "tools"
+
+  datasets.col.name: "Dataset"
+  datasets.col.organism: "Organism"
+  datasets.col.type: "Data type"
+  datasets.col.access: "Access"
+
+  home.closing.title: "A concise starting point"
+  home.closing.body: "CompBio Brief brings together practical knowledge that is often scattered across papers, documentation and notebooks — so that researchers, students and computational scientists have a clear place to begin."
+  home.closing.link: "Read more about this project"
 
   footer.copy:    "© 2026 CompBio Brief · Built with care."
   footer.online:  "readers online now"
@@ -27,23 +44,40 @@ en:
 
 da:
   brand.tagline: "En åben ressource for beregningsbiologi"
+
   hero.eyebrow:  "CompBio Brief · Etableret 2026"
   hero.title:    "En åben ressource for beregningsbiologi."
   hero.subtitle: "Dokumentation af praktisk viden inden for beregningsbiologi, bioinformatik og biomedicinsk dataanalyse — skrevet med klarhed og omhu."
   hero.cta.tools: "Udforsk værktøjer"
   hero.cta.notes: "Læs noter"
 
-  section.featured: "Seneste noter"
-  section.tools:    "Værktøjer & ressourcer"
+  section.tools: "Værktøjer & ressourcer"
+  section.tools.subtitle: "Udvalgt software til sekvensanalyse, single-cell-analyse, variantfortolkning og machine learning — med oplysninger om input, output og installation."
+  section.tools.link: "Se alle værktøjer"
+
+  section.notes: "Seneste noter"
+  section.notes.subtitle: "Korte, originale noter om metode, reproducerbarhed og praksis i beregningsorienteret forskning."
+  section.notes.link: "Alle noter"
+
   section.datasets: "Offentlige datasæt"
+  section.datasets.subtitle: "En kort liste over åbent tilgængelige datasæt, der ofte bruges i beregningsbiologi — med organisme, type og adgang."
+  section.datasets.link: "Gennemse datasæt"
 
-  col.research:     "Forskning"
-  col.methods:      "Metoder & Værktøjer"
-  col.perspectives: "Perspektiver"
+  section.tutorials: "Vejledninger"
+  section.tutorials.subtitle: "Trin-for-trin-guides til almindelige arbejdsgange i beregningsbiologi — fra rådata til fortolkbare resultater."
+  section.tutorials.link: "Se alle vejledninger"
+  section.tutorials.empty: "Vejledninger er under udarbejdelse. Det første sæt vil dække kvalitetskontrol af enkeltceller, RNA-seq-alignment og spatial integration."
 
-  about.title: "En åben ressource for beregningsbiologi"
-  about.p1: "CompBio Brief er et åbent rum til dokumentation af praktisk viden inden for beregningsbiologi, bioinformatik og biomedicinsk dataanalyse."
-  about.p2: "Siden samler korte forskningsnoter, værktøjsreferencer, offentlige datasæt og praktiske arbejdsgange — skrevet for at være nyttig for forskere, studerende og beregningsvidenskabsfolk."
+  tools.count: "værktøjer"
+
+  datasets.col.name: "Datasæt"
+  datasets.col.organism: "Organisme"
+  datasets.col.type: "Datatype"
+  datasets.col.access: "Adgang"
+
+  home.closing.title: "Et kortfattet udgangspunkt"
+  home.closing.body: "CompBio Brief samler praktisk viden, der ofte er spredt mellem artikler, dokumentation og notesbøger — så forskere, studerende og beregningsvidenskabsfolk har et klart sted at begynde."
+  home.closing.link: "Læs mere om dette projekt"
 
   footer.copy:    "© 2026 CompBio Brief · Bygget med omhu."
   footer.online:  "læsere online nu"
@@ -54,23 +88,40 @@ da:
 
 fa:
   brand.tagline: "منبعی باز برای بیولوژی محاسباتی"
+
   hero.eyebrow:  "CompBio Brief · از ۲۰۲۶"
   hero.title:    "منبعی باز برای بیولوژی محاسباتی."
   hero.subtitle: "مستندسازی دانش کاربردی در بیولوژی محاسباتی، بیوانفورماتیک و تحلیل داده‌های زیست‌پزشکی — با شفافیت و دقت."
   hero.cta.tools: "کاوش در ابزارها"
   hero.cta.notes: "خواندن یادداشت‌ها"
 
-  section.featured: "یادداشت‌های اخیر"
-  section.tools:    "ابزارها و منابع"
+  section.tools: "ابزارها و منابع"
+  section.tools.subtitle: "نرم‌افزارهای گزیده برای تحلیل توالی، کار تک‌سلولی، تفسیر واریانت و یادگیری ماشین — همراه با ورودی، خروجی و نکات نصب."
+  section.tools.link: "مشاهده‌ی همه‌ی ابزارها"
+
+  section.notes: "یادداشت‌های اخیر"
+  section.notes.subtitle: "یادداشت‌های کوتاه و اصیل درباره‌ی روش‌شناسی، بازتولیدپذیری و رویه‌ی پژوهش محاسباتی."
+  section.notes.link: "همه‌ی یادداشت‌ها"
+
   section.datasets: "داده‌های عمومی"
+  section.datasets.subtitle: "فهرست کوتاهی از داده‌های باز و پرکاربرد در بیولوژی محاسباتی — همراه با ارگانیسم، نوع و نحوه‌ی دسترسی."
+  section.datasets.link: "مرور داده‌ها"
 
-  col.research:     "پژوهش"
-  col.methods:      "روش‌ها و ابزارها"
-  col.perspectives: "دیدگاه‌ها"
+  section.tutorials: "آموزش‌ها"
+  section.tutorials.subtitle: "راهنماهای گام‌به‌گام برای گردش‌کارهای رایج در بیولوژی محاسباتی — از داده‌ی خام تا نتایج قابل تفسیر."
+  section.tutorials.link: "مشاهده‌ی همه‌ی آموزش‌ها"
+  section.tutorials.empty: "آموزش‌ها در حال آماده‌سازی هستند. مجموعه‌ی اول شامل کنترل کیفیت تک‌سلولی، هم‌ترازی RNA-seq و ادغام فضایی خواهد بود."
 
-  about.title: "منبعی باز برای بیولوژی محاسباتی"
-  about.p1: "CompBio Brief فضایی باز برای مستندسازی دانش کاربردی در بیولوژی محاسباتی، بیوانفورماتیک و تحلیل داده‌های زیست‌پزشکی است."
-  about.p2: "این سایت یادداشت‌های کوتاه پژوهشی، ارجاع به ابزارها، داده‌های عمومی و گردش‌کارهای کاربردی را گرد هم می‌آورد — نوشته‌شده برای پژوهشگران، دانشجویان و متخصصان علوم محاسباتی."
+  tools.count: "ابزار"
+
+  datasets.col.name: "داده"
+  datasets.col.organism: "ارگانیسم"
+  datasets.col.type: "نوع داده"
+  datasets.col.access: "دسترسی"
+
+  home.closing.title: "یک نقطه‌ی شروع مختصر"
+  home.closing.body: "CompBio Brief دانش کاربردی‌ای را که اغلب میان مقالات، مستندات و دفترچه‌ها پراکنده است گرد هم می‌آورد — تا پژوهشگران، دانشجویان و متخصصان علوم محاسباتی جای روشنی برای شروع داشته باشند."
+  home.closing.link: "بیشتر درباره‌ی این پروژه بخوانید"
 
   footer.copy:    "© ۲۰۲۶ CompBio Brief · با دقت ساخته شده."
   footer.online:  "خواننده آنلاین"
