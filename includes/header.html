@@ -1,13 +1,11 @@
 <header class="site-header" role="banner">
   <div class="container header-inner">
 
-    <!-- Logo -->
-    <a href="{{ '/' | relative_url }}" class="logo" aria-label="{{ site.title }}">
+    <a href="{{ '/' | relative_url }}" class="logo" aria-label="CompBio Brief">
       <span class="logo-mark" aria-hidden="true">C</span>
-      <span class="logo-text">CompBio&nbsp;Lab</span>
+      <span class="logo-text">CompBio<em>&nbsp;Brief</em></span>
     </a>
 
-    <!-- Main nav -->
     <nav class="main-nav" role="navigation" aria-label="Main">
       {% for item in site.data.navigation.main %}
         <a href="{{ item.url | relative_url }}"
@@ -18,10 +16,8 @@
       {% endfor %}
     </nav>
 
-    <!-- Right actions -->
     <div class="header-actions">
 
-      <!-- Language switch -->
       <div class="lang-switch" role="group" aria-label="Language">
         {% for lang in site.languages %}
           <button
@@ -36,7 +32,6 @@
         {% endfor %}
       </div>
 
-      <!-- Theme toggle -->
       <button
         type="button"
         id="theme-toggle"
