@@ -1,0 +1,69 @@
+# ============================================================
+#  CompBio Lab — Public datasets catalogue
+#  Openly available datasets used in computational biology.
+#  Each entry includes a link to the authoritative source.
+# ============================================================
+
+- name: "PBMC3k"
+  organism: "Homo sapiens"
+  type: "scRNA-seq"
+  samples: "~2,700 cells"
+  access: "Free"
+  use_cases: "Benchmarking clustering, dimensionality reduction, tutorial workflows"
+  url: "https://www.10xgenomics.com/datasets/3-k-pbm-cs-from-a-healthy-donor-1-standard-1-1-0"
+
+- name: "Tabula Muris"
+  organism: "Mus musculus"
+  type: "scRNA-seq"
+  samples: "~100,000 cells across 20 organs"
+  access: "Free"
+  use_cases: "Cross-tissue atlases, cell-type discovery, integration methods"
+  url: "https://tabula-muris.ds.czbiohub.org/"
+
+- name: "MIMIC-IV"
+  organism: "Homo sapiens"
+  type: "Clinical records"
+  samples: "ICU admissions, 2008–2019"
+  access: "Credentialed"
+  use_cases: "Clinical prediction, benchmarking ML on EHR data"
+  url: "https://physionet.org/content/mimiciv/"
+
+- name: "gnomAD"
+  organism: "Homo sapiens"
+  type: "Variant frequency"
+  samples: ">800,000 individuals"
+  access: "Free"
+  use_cases: "Population allele frequencies, rare variant filtering, constraint scores"
+  url: "https://gnomad.broadinstitute.org/"
+
+- name: "ClinVar"
+  organism: "Homo sapiens"
+  type: "Variant interpretation"
+  samples: "Millions of submissions"
+  access: "Free"
+  use_cases: "Clinical variant classification, benchmarking annotation tools"
+  url: "https://www.ncbi.nlm.nih.gov/clinvar/"
+
+- name: "TCGA"
+  organism: "Homo sapiens"
+  type: "Multi-omics cancer data"
+  samples: "~20,000 primary tumours across 33 cancer types"
+  access: "Controlled (with open summaries)"
+  use_cases: "Cancer genomics, survival analysis, multi-omics integration"
+  url: "https://www.cancer.gov/ccg/research/genome-sequencing/tcga"
+
+- name: "Human Cell Atlas"
+  organism: "Homo sapiens"
+  type: "scRNA-seq, spatial"
+  samples: "Growing — millions of cells"
+  access: "Free"
+  use_cases: "Reference atlases, cell-type annotation, tissue mapping"
+  url: "https://www.humancellatlas.org/"
+
+- name: "SCoPE2"
+  organism: "Homo sapiens"
+  type: "Single-cell proteomics"
+  samples: "~1,500 single cells"
+  access: "Free"
+  use_cases: "Single-cell proteomics methods, benchmarking quantification"
+  url: "https://scope2.slavovlab.net/"
