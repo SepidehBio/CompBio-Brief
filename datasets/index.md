@@ -7,9 +7,9 @@ permalink: /datasets/
 
 <header class="page-header">
   <div class="container container-sm">
-    <div class="page-header-eyebrow">Catalogue</div>
-    <h1 class="page-header-title" data-i18n="section.datasets">Public datasets</h1>
-    <p class="page-header-subtitle">
+    <div class="page-header-eyebrow" data-i18n="datasets.catalogue">Catalogue</div>
+    <h1 class="page-header-title" data-i18n="datasets.title">Datasets</h1>
+    <p class="page-header-subtitle" data-i18n="datasets.subtitle">
       A short, working list of openly available datasets used in
       computational biology and biomedical data analysis.
     </p>
@@ -22,12 +22,10 @@ permalink: /datasets/
     <table class="dataset-table">
       <thead>
         <tr>
-          <th>Dataset</th>
-          <th>Organism</th>
-          <th>Data type</th>
-          <th>Samples</th>
-          <th>Access</th>
-          <th>Use cases</th>
+          <th data-i18n="datasets.col.name">Dataset</th>
+          <th data-i18n="datasets.col.organism">Organism</th>
+          <th data-i18n="datasets.col.type">Data type</th>
+          <th data-i18n="datasets.col.access">Access</th>
         </tr>
       </thead>
       <tbody>
@@ -42,9 +40,7 @@ permalink: /datasets/
             </td>
             <td>{{ ds.organism }}</td>
             <td>{{ ds.type }}</td>
-            <td>{{ ds.samples }}</td>
             <td>{{ ds.access }}</td>
-            <td>{{ ds.use_cases }}</td>
           </tr>
         {% endfor %}
       </tbody>
@@ -52,7 +48,7 @@ permalink: /datasets/
   </div>
 
   <div class="prose" style="margin-top: 60px;">
-    <h2>On using public data</h2>
+    <h2 data-i18n="datasets.h.using">On using public data</h2>
 
     <p>
       Public datasets are the backbone of reproducible computational
