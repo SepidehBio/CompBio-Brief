@@ -1,0 +1,25 @@
+<footer class="site-footer" role="contentinfo">
+  <div class="container footer-inner">
+
+    <!-- Left: copyright + license -->
+    <div class="footer-left">
+      <span class="footer-copy" data-i18n="footer.copy">
+        {{ site.data.i18n[site.default_lang]['footer.copy'] }}
+      </span>
+      <span class="footer-sep" aria-hidden="true">·</span>
+      <span class="footer-rights" data-i18n="footer.rights">
+        {{ site.data.i18n[site.default_lang]['footer.rights'] }}
+      </span>
+    </div>
+
+    <!-- Right: online counter -->
+    <div class="footer-right" aria-live="polite">
+      <span class="live-dot" aria-hidden="true"></span>
+      <span id="online-count" class="online-count" aria-label="Readers online">14</span>
+      <span class="online-label" data-i18n="footer.online">
+        {{ site.data.i18n[site.default_lang]['footer.online'] }}
+      </span>
+    </div>
+
+  </div>
+</footer>
