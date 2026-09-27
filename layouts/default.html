@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="{{ site.default_lang | default: 'en' }}" dir="ltr" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0e3b2e" />
+
+  <title>
+    {% if page.title and page.title != site.title %}
+      {{ page.title }} · {{ site.title }}
+    {% else %}
+      {{ site.title }} — {{ site.tagline }}
+    {% endif %}
+  </title>
+
+  <meta name="description" content="{{ page.description | default: site.description | strip_newlines }}" />
+
+  {% seo %}
+  {% feed_meta %}
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700&family=Vazirmatn:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="{{ '/assets/images/favicon.svg' | relative_url }}" type="image/svg+xml" />
+
+  <!-- Inject translations for JS -->
+  <script>
+    window.__I18N__ = {
+      {% for lang in site.languages %}
+        "{{ lang.code }}": {
+          {% for pair in site.data.i18n[lang.code] %}
+            "{{ pair[0] }}": {{ pair[1] | jsonify }}{% unless forloop.last %},{% endunless %}
+          {% endfor %}
+        }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    };
+    window.__LANGS__ = [
+      {% for lang in site.languages %}
+        { code: "{{ lang.code }}", dir: "{{ lang.dir }}", name: "{{ lang.name }}" }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ];
+    window.__DEFAULT_LANG__ = "{{ site.default_lang | default: 'en' }}";
+  </script>
+</head>
+<body>
+
+  {% include header.html %}
+
+  <main class="site-main">
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+
+  <script src="{{ '/assets/js/main.js' | relative_url }}" defer></script>
+</body>
+</html>
