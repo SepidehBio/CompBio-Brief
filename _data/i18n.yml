@@ -20,8 +20,8 @@ en:
   section.datasets.link: "Browse datasets"
 
   section.tutorials: "Tutorials"
-  section.tutorials.subtitle: "Step-by-step guides for common workflows in computational biology — from raw data to interpretable results."
-  section.tutorials.link: "View all tutorials"
+  section.tutorials.subtitle: "Practical guides for common computational biology tasks, from data preparation and quality control to model evaluation and reproducible workflows."
+  section.tutorials.link: "Explore tutorials"
   section.tutorials.empty: "Tutorials are being prepared. The first set will cover single-cell quality control, RNA-seq alignment and spatial integration."
 
   tools.count: "tools"
@@ -31,9 +31,9 @@ en:
   datasets.col.type: "Data type"
   datasets.col.access: "Access"
 
-  home.closing.title: "A concise starting point"
-  home.closing.body: "CompBio Brief brings together practical knowledge that is often scattered across papers, documentation and notebooks — so that researchers, students and computational scientists have a clear place to begin."
-  home.closing.link: "Read more about this project"
+  home.closing.title: "Built for practical computational work"
+  home.closing.body: "CompBio Brief brings together concise notes, curated tools, public datasets and practical workflows for computational biology and biomedical data analysis."
+  home.closing.body2: "The focus is simple: useful information, clear explanations and reproducible practice."
 
   footer.copy:    "© 2026 CompBio Brief · Built with care."
   footer.online:  "readers online now"
@@ -41,6 +41,20 @@ en:
 
   meta.theme.toggle:  "Toggle theme"
   meta.lang.switch:   "Change language"
+
+  categories:
+    sequence-analysis:
+      title: "Sequence Analysis"
+      description: "Tools for alignment, annotation and comparative work with nucleotide and protein sequences."
+    single-cell:
+      title: "Single-Cell Analysis"
+      description: "Frameworks for single-cell RNA-seq, integration and spatial transcriptomics."
+    variant-analysis:
+      title: "Variant Analysis"
+      description: "Tools for calling, annotating and interpreting genetic variants from sequencing data."
+    machine-learning:
+      title: "Machine Learning"
+      description: "General-purpose tools for predictive modelling and deep learning on biomedical data."
 
 da:
   brand.tagline: "En åben ressource for beregningsbiologi"
@@ -64,8 +78,8 @@ da:
   section.datasets.link: "Gennemse datasæt"
 
   section.tutorials: "Vejledninger"
-  section.tutorials.subtitle: "Trin-for-trin-guides til almindelige arbejdsgange i beregningsbiologi — fra rådata til fortolkbare resultater."
-  section.tutorials.link: "Se alle vejledninger"
+  section.tutorials.subtitle: "Praktiske guides til almindelige opgaver i beregningsbiologi — fra dataklargøring og kvalitetskontrol til modelvurdering og reproducerbare arbejdsgange."
+  section.tutorials.link: "Udforsk vejledninger"
   section.tutorials.empty: "Vejledninger er under udarbejdelse. Det første sæt vil dække kvalitetskontrol af enkeltceller, RNA-seq-alignment og spatial integration."
 
   tools.count: "værktøjer"
@@ -75,9 +89,9 @@ da:
   datasets.col.type: "Datatype"
   datasets.col.access: "Adgang"
 
-  home.closing.title: "Et kortfattet udgangspunkt"
-  home.closing.body: "CompBio Brief samler praktisk viden, der ofte er spredt mellem artikler, dokumentation og notesbøger — så forskere, studerende og beregningsvidenskabsfolk har et klart sted at begynde."
-  home.closing.link: "Læs mere om dette projekt"
+  home.closing.title: "Bygget til praktisk beregningsarbejde"
+  home.closing.body: "CompBio Brief samler korte noter, udvalgte værktøjer, offentlige datasæt og praktiske arbejdsgange til beregningsbiologi og biomedicinsk dataanalyse."
+  home.closing.body2: "Fokus er enkelt: brugbar information, klare forklaringer og reproducerbar praksis."
 
   footer.copy:    "© 2026 CompBio Brief · Bygget med omhu."
   footer.online:  "læsere online nu"
@@ -85,6 +99,20 @@ da:
 
   meta.theme.toggle:  "Skift tema"
   meta.lang.switch:   "Skift sprog"
+
+  categories:
+    sequence-analysis:
+      title: "Sekvensanalyse"
+      description: "Værktøjer til alignment, annotering og komparativt arbejde med nukleotid- og proteinsekvenser."
+    single-cell:
+      title: "Enkeltcelleanalyse"
+      description: "Rammeworks til scRNA-seq, integration og spatial transcriptomics."
+    variant-analysis:
+      title: "Variantanalyse"
+      description: "Værktøjer til at kalde, annotere og fortolke genetiske varianter fra sekventeringsdata."
+    machine-learning:
+      title: "Machine Learning"
+      description: "Generelle værktøjer til prædiktiv modellering og deep learning på biomedicinske data."
 
 fa:
   brand.tagline: "منبعی باز برای بیولوژی محاسباتی"
@@ -108,8 +136,8 @@ fa:
   section.datasets.link: "مرور داده‌ها"
 
   section.tutorials: "آموزش‌ها"
-  section.tutorials.subtitle: "راهنماهای گام‌به‌گام برای گردش‌کارهای رایج در بیولوژی محاسباتی — از داده‌ی خام تا نتایج قابل تفسیر."
-  section.tutorials.link: "مشاهده‌ی همه‌ی آموزش‌ها"
+  section.tutorials.subtitle: "راهنماهای کاربردی برای کارهای رایج در بیولوژی محاسباتی — از آماده‌سازی داده و کنترل کیفیت تا ارزیابی مدل و گردش‌کارهای بازتولیدپذیر."
+  section.tutorials.link: "کاوش در آموزش‌ها"
   section.tutorials.empty: "آموزش‌ها در حال آماده‌سازی هستند. مجموعه‌ی اول شامل کنترل کیفیت تک‌سلولی، هم‌ترازی RNA-seq و ادغام فضایی خواهد بود."
 
   tools.count: "ابزار"
@@ -119,9 +147,9 @@ fa:
   datasets.col.type: "نوع داده"
   datasets.col.access: "دسترسی"
 
-  home.closing.title: "یک نقطه‌ی شروع مختصر"
-  home.closing.body: "CompBio Brief دانش کاربردی‌ای را که اغلب میان مقالات، مستندات و دفترچه‌ها پراکنده است گرد هم می‌آورد — تا پژوهشگران، دانشجویان و متخصصان علوم محاسباتی جای روشنی برای شروع داشته باشند."
-  home.closing.link: "بیشتر درباره‌ی این پروژه بخوانید"
+  home.closing.title: "ساخته‌شده برای کار محاسباتی کاربردی"
+  home.closing.body: "CompBio Brief یادداشت‌های کوتاه، ابزارهای گزیده، داده‌های عمومی و گردش‌کارهای کاربردی را برای بیولوژی محاسباتی و تحلیل داده‌های زیست‌پزشکی گرد هم می‌آورد."
+  home.closing.body2: "تمرکز ساده است: اطلاعات مفید، توضیح روشن و رویه‌ی بازتولیدپذیر."
 
   footer.copy:    "© ۲۰۲۶ CompBio Brief · با دقت ساخته شده."
   footer.online:  "خواننده آنلاین"
@@ -129,3 +157,17 @@ fa:
 
   meta.theme.toggle:  "تغییر پوسته"
   meta.lang.switch:   "تغییر زبان"
+
+  categories:
+    sequence-analysis:
+      title: "تحلیل توالی"
+      description: "ابزارهایی برای هم‌ترازی، حاشیه‌نویسی و کار مقایسه‌ای روی توالی‌های نوکلئوتیدی و پروتئینی."
+    single-cell:
+      title: "تحلیل تک‌سلولی"
+      description: "چارچوب‌هایی برای scRNA-seq، ادغام داده‌ها و ترانسکریپتومیکس فضایی."
+    variant-analysis:
+      title: "تحلیل واریانت"
+      description: "ابزارهایی برای فراخوانی، حاشیه‌نویسی و تفسیر واریانت‌های ژنتیکی از داده‌های توالی‌یابی."
+    machine-learning:
+      title: "یادگیری ماشین"
+      description: "ابزارهای عمومی برای مدل‌سازی پیش‌بین و یادگیری عمیق روی داده‌های زیست‌پزشکی."
