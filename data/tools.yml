@@ -1,0 +1,186 @@
+# ============================================================
+#  CompBio Lab — Tools catalogue
+#  Curated list of software used in computational biology
+#  Every entry links to official documentation and source.
+# ============================================================
+
+sequence-analysis:
+  title: "Sequence Analysis"
+  description: >-
+    Tools for alignment, annotation and comparative work with
+    nucleotide and protein sequences.
+  tools:
+    - name: "BLAST"
+      type: "CLI · Web"
+      what: >-
+        Local and remote similarity search against nucleotide and
+        protein databases. The reference implementation of sequence
+        alignment heuristics, still unmatched for fast first-pass
+        homology searches.
+      input: "FASTA sequence, database, program type (blastn, blastp, blastx)"
+      output: "Alignments with E-values, bit scores and percent identity"
+      install: "Available via NCBI; also callable through Biopython's Bio.Blast module."
+      example: "Bio.Blast.NCBIWWW.qblast('blastn', 'nt', 'ATGGCCATTGTAATGGGC')"
+      docs: "https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web&PAGE_TYPE=BlastDocs"
+      github: "https://github.com/ncbi/blast"
+
+    - name: "Biopython"
+      type: "Python library"
+      what: >-
+        A comprehensive toolkit for biological computation — sequence
+        I/O, BLAST parsing, alignment, phylogenetics and structural
+        bioinformatics. The de facto standard for scripting in Python.
+      input: "Sequence files (FASTA, GenBank), alignment files, database records"
+      output: "Python objects for sequences, alignments and annotations"
+      install: "pip install biopython"
+      example: "from Bio import SeqIO; SeqIO.parse('input.fasta', 'fasta')"
+      docs: "https://biopython.org/docs/latest/Tutorial/index.html"
+      github: "https://github.com/biopython/biopython"
+
+    - name: "HMMER"
+      type: "CLI"
+      what: >-
+        Profile hidden Markov model searches for protein and DNA
+        homology detection. More sensitive than BLAST for detecting
+        remote homologues and conserved domains.
+      input: "HMM profile or sequence database, query sequences"
+      output: "Hits with E-values, bit scores and alignment coordinates"
+      install: "conda install -c bioconda hmmer"
+      example: "hmmscan Pfam-A.hmm proteins.faa"
+      docs: "http://hmmer.org/documentation.html"
+      github: "https://github.com/EddyRivasLab/hmmer"
+
+single-cell:
+  title: "Single-Cell Analysis"
+  description: >-
+    Frameworks for single-cell RNA-seq, integration and spatial
+    transcriptomics.
+  tools:
+    - name: "Scanpy"
+      type: "Python library"
+      what: >-
+        Scalable analysis of single-cell gene expression data, built
+        on AnnData. Handles datasets with millions of cells without
+        leaving the Python ecosystem.
+      input: "Count matrices (10x Genomics, h5ad, CSV)"
+      output: "Embeddings (UMAP, t-SNE), clustering, differential expression"
+      install: "pip install scanpy"
+      example: "import scanpy as sc; adata = sc.read_10x_mtx('filtered_feature_bc_matrix')"
+      docs: "https://scanpy.readthedocs.io/"
+      github: "https://github.com/scverse/scanpy"
+
+    - name: "Seurat"
+      type: "R package"
+      what: >-
+        A widely adopted R toolkit for single-cell RNA-seq analysis,
+        integration and label transfer. Known for its rich
+        visualisation layer and stable integration workflows.
+      input: "Count matrices (10x CellRanger, h5, CSV)"
+      output: "Clustered cells, UMAP coordinates, marker genes, integrated data"
+      install: "install.packages('Seurat')"
+      example: "library(Seurat); pbmc <- CreateSeuratObject(counts = pbmc.data)"
+      docs: "https://satijalab.org/seurat/"
+      github: "https://github.com/satijalab/seurat"
+
+    - name: "Squidpy"
+      type: "Python library"
+      what: >-
+        Spatial transcriptomics analysis built on Scanpy and AnnData.
+        Provides neighbourhood enrichment, spatial autocorrelation
+        and co-occurrence statistics for spatially resolved data.
+      input: "AnnData objects with spatial coordinates"
+      output: "Spatial graphs, neighbourhood enrichment, co-occurrence statistics"
+      install: "pip install squidpy"
+      example: "import squidpy as sq; sq.gr.spatial_neighbors(adata)"
+      docs: "https://squidpy.readthedocs.io/"
+      github: "https://github.com/scverse/squidpy"
+
+variant-analysis:
+  title: "Variant Analysis"
+  description: >-
+    Tools for calling, annotating and interpreting genetic variants
+    from sequencing data.
+  tools:
+    - name: "bcftools"
+      type: "CLI"
+      what: >-
+        A suite of utilities for variant calling and manipulating
+        VCF/BCF files. Part of the samtools ecosystem and widely
+        used in production pipelines.
+      input: "BAM files, VCF/BCF files, reference genome"
+      output: "VCF/BCF files with variant calls, annotations, filtered sets"
+      install: "conda install -c bioconda bcftools"
+      example: "bcftools mpileup -f ref.fa sample.bam | bcftools call -mv -o calls.vcf"
+      docs: "https://samtools.github.io/bcftools/bcftools.html"
+      github: "https://github.com/samtools/bcftools"
+
+    - name: "VEP"
+      type: "CLI · Web"
+      what: >-
+        Variant Effect Predictor — predicts the functional
+        consequences of variants on genes, transcripts and regulatory
+        regions. Maintained by Ensembl.
+      input: "VCF file, reference genome, annotation databases"
+      output: "Annotated VCF with consequence types, transcripts and impact"
+      install: "conda install -c bioconda ensembl-vep"
+      example: "vep -i input.vcf -o output.vcf --cache --assembly GRCh38"
+      docs: "https://www.ensembl.org/info/docs/tools/vep/index.html"
+      github: "https://github.com/Ensembl/ensembl-vep"
+
+    - name: "ClinVar"
+      type: "Database"
+      what: >-
+        A public archive of relationships between human genetic
+        variants and clinical significance. Supports interpretation
+        with review status and evidence level.
+      input: "Variant identifiers (rsID, HGVS), gene names, genomic coordinates"
+      output: "Clinical interpretations, review status, associated conditions"
+      install: "Web access and FTP downloads available."
+      example: "Query via NCBI E-utilities or download the full VCF."
+      docs: "https://www.ncbi.nlm.nih.gov/clinvar/"
+      github: "https://github.com/ncbi/clinvar"
+
+machine-learning:
+  title: "Machine Learning"
+  description: >-
+    General-purpose tools for predictive modelling and deep learning
+    on biomedical data.
+  tools:
+    - name: "scikit-learn"
+      type: "Python library"
+      what: >-
+        Classical machine learning — classification, regression,
+        clustering, model selection. Well documented and a natural
+        starting point before reaching for deep learning.
+      input: "Numerical feature matrices (NumPy arrays, pandas DataFrames)"
+      output: "Trained models, predictions, performance metrics"
+      install: "pip install scikit-learn"
+      example: "from sklearn.ensemble import RandomForestClassifier; clf = RandomForestClassifier()"
+      docs: "https://scikit-learn.org/stable/documentation.html"
+      github: "https://github.com/scikit-learn/scikit-learn"
+
+    - name: "PyTorch"
+      type: "Python library"
+      what: >-
+        A flexible deep learning framework used widely in
+        computational biology for representation learning on
+        sequences, graphs and images.
+      input: "Tensors, datasets (DataLoader), model definitions"
+      output: "Trained models, predictions, gradients"
+      install: "pip install torch"
+      example: "import torch; model = torch.nn.Linear(10, 2)"
+      docs: "https://pytorch.org/docs/stable/index.html"
+      github: "https://github.com/pytorch/pytorch"
+
+    - name: "Snakemake"
+      type: "CLI · Python"
+      what: >-
+        A workflow management system for reproducible data analysis.
+        Rules are written in Python, and pipelines scale from laptop
+        to cluster without changes.
+      input: "Snakefile describing rules, input data"
+      output: "Executed workflow with reproducible outputs"
+      install: "conda install -c bioconda snakemake"
+      example: "snakemake --cores 8 --use-conda"
+      docs: "https://snakemake.readthedocs.io/"
+      github: "https://github.com/snakemake/snakemake"
