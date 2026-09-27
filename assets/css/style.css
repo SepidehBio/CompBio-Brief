@@ -1099,3 +1099,9 @@ html[lang="fa"] .page-header-title {
   outline-offset: 3px;
   border-radius: var(--r-xs);
 }
+
+.logo-text em {
+  font-style: italic;
+  color: var(--gold);
+  font-weight: 500;
+}
