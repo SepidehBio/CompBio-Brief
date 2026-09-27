@@ -7,9 +7,9 @@ permalink: /about/
 
 <header class="page-header">
   <div class="container container-sm">
-    <div class="page-header-eyebrow">About</div>
-    <h1 class="page-header-title">An open resource for computational biology</h1>
-    <p class="page-header-subtitle">
+    <div class="page-header-eyebrow" data-i18n="about.title">About</div>
+    <h1 class="page-header-title" data-i18n="about.heading">An open resource for computational biology</h1>
+    <p class="page-header-subtitle" data-i18n="about.subtitle">
       CompBio Brief is an open space for documenting practical knowledge
       in computational biology, bioinformatics and biomedical data analysis.
     </p>
@@ -19,7 +19,7 @@ permalink: /about/
 <article class="container container-md">
   <div class="prose">
 
-    <h2>What this is</h2>
+    <h2 data-i18n="about.h.what">What this is</h2>
 
     <p>
       The site brings together concise research notes, tool references,
@@ -34,7 +34,7 @@ permalink: /about/
       than jargon for its own sake.
     </p>
 
-    <h2>Why it exists</h2>
+    <h2 data-i18n="about.h.why">Why it exists</h2>
 
     <p>
       Computational biology involves many small decisions: how data are
@@ -55,7 +55,7 @@ permalink: /about/
       going deeper into the literature or documentation.
     </p>
 
-    <h2>Scope</h2>
+    <h2 data-i18n="about.h.scope">Scope</h2>
 
     <p>Topics include:</p>
 
@@ -77,7 +77,7 @@ permalink: /about/
       reliable documentation to explain them accurately.
     </p>
 
-    <h2>How it is built</h2>
+    <h2 data-i18n="about.h.how">How it is built</h2>
 
     <p>
       CompBio Brief is built from scratch using Jekyll, HTML, CSS and
@@ -95,7 +95,7 @@ permalink: /about/
       accessibility-oriented features.
     </p>
 
-    <h2>Open by design</h2>
+    <h2 data-i18n="about.h.open">Open by design</h2>
 
     <p>
       The written content is published under the
