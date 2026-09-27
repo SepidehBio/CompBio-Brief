@@ -1,47 +1,54 @@
 # ============================================
-#  Main navigation — bilingual
+#  Main navigation — trilingual
 # ============================================
 
 main:
   - key: tools
     url: /tools/
     en: Tools
+    da: Værktøjer
     fa: ابزارها
 
   - key: tutorials
     url: /tutorials/
     en: Tutorials
+    da: Vejledninger
     fa: آموزش‌ها
 
   - key: datasets
     url: /datasets/
     en: Datasets
+    da: Datasæt
     fa: داده‌ها
 
   - key: notes
     url: /notes/
     en: Research Notes
+    da: Forskningsnoter
     fa: یادداشت‌ها
 
   - key: about
     url: /about/
     en: About
+    da: Om
     fa: درباره
 
-# Footer links (secondary)
 footer:
   - key: contact
     url: /contact/
     en: Contact
+    da: Kontakt
     fa: تماس
 
   - key: resources
     url: /resources/
     en: Resources
+    da: Ressourcer
     fa: منابع
 
   - key: github
     url: https://github.com/<username>/compbio-lab
     en: GitHub
+    da: GitHub
     fa: گیت‌هاب
     external: true
