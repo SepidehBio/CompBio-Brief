@@ -1,19 +1,13 @@
-# ============================================
-#  CompBio Lab — Jekyll Configuration
-#  Trilingual: English · Dansk · فارسی
-# ============================================
-
-title: CompBio Lab
-tagline: Notes on computational biology, research software, and scientific practice
+title: CompBio Brief
+tagline: Brief notes on computational biology, research software, and scientific practice
 description: >-
-  A practical, open resource for computational biology, bioinformatics
-  and biomedical data analysis — written by hand, in English, Danish and Persian.
+  An open notebook on computational biology — tools, datasets, and
+  research notes. Trilingual (EN/DA/FA), built from scratch.
 
 author:
-  name: CompBio Lab
+  name: CompBio Brief
   email: hello@example.com
 
-# --- Languages (first = default) ---
 languages:
   - code: en
     name: English
@@ -33,11 +27,9 @@ languages:
 
 default_lang: en
 
-# --- URLs ---
 url: "https://<username>.github.io"
-baseurl: ""
+baseurl: "/compbio-brief"
 
-# --- Build ---
 markdown: kramdown
 highlighter: rouge
 permalink: /notes/:year/:month/:day/:title/
