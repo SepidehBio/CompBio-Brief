@@ -60,12 +60,11 @@ permalink: /
           <a href="{{ '/tools/#' | append: key | relative_url }}"
              class="card fade-up"
              data-reveal
-             data-reveal-delay="{{ forloop.index0 | times: 80 }}"
-             data-category-key="{{ key }}">
+             data-reveal-delay="{{ forloop.index0 | times: 80 }}">
 
-            <span class="card-label" data-category-label="{{ key }}">{{ value.title }}</span>
-            <h3 class="card-title" data-category-title="{{ key }}">{{ value.title }}</h3>
-            <p class="card-summary" data-category-description="{{ key }}">{{ value.description }}</p>
+            <span class="card-label" data-content="categories.{{ key }}.title">{{ value.title }}</span>
+            <h3 class="card-title" data-content="categories.{{ key }}.title">{{ value.title }}</h3>
+            <p class="card-summary" data-content="categories.{{ key }}.description">{{ value.description }}</p>
 
             <div class="card-meta">
               <span class="card-meta-tag">
@@ -179,12 +178,13 @@ permalink: /
       <div class="section-head-text">
         <h2 class="section-title" data-i18n="section.tutorials">Tutorials</h2>
         <p class="section-subtitle" data-i18n="section.tutorials.subtitle">
-          Step-by-step guides for common workflows in computational
-          biology — from raw data to interpretable results.
+          Practical guides for common computational biology tasks, from
+          data preparation and quality control to model evaluation and
+          reproducible workflows.
         </p>
       </div>
       <a href="{{ '/tutorials/' | relative_url }}" class="section-link">
-        <span data-i18n="section.tutorials.link">View all tutorials</span>
+        <span data-i18n="section.tutorials.link">Explore tutorials</span>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
       </a>
     </header>
@@ -228,20 +228,17 @@ permalink: /
   <div class="container container-md">
     <div class="prose" data-reveal style="text-align: center;">
 
-      <h2 data-i18n="home.closing.title">A concise starting point</h2>
+      <h2 data-i18n="home.closing.title">Built for practical computational work</h2>
 
       <p data-i18n="home.closing.body">
-        CompBio Brief brings together practical knowledge that is often
-        scattered across papers, documentation and notebooks — so that
-        researchers, students and computational scientists have a clear
-        place to begin.
+        CompBio Brief brings together concise notes, curated tools,
+        public datasets and practical workflows for computational
+        biology and biomedical data analysis.
       </p>
 
-      <p style="margin-top: 2em;">
-        <a href="{{ '/about/' | relative_url }}" class="section-link" style="display: inline-flex;">
-          <span data-i18n="home.closing.link">Read more about this project</span>
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
+      <p data-i18n="home.closing.body2">
+        The focus is simple: useful information, clear explanations
+        and reproducible practice.
       </p>
 
     </div>
