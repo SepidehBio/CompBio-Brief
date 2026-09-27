@@ -7,9 +7,9 @@ permalink: /tutorials/
 
 <header class="page-header">
   <div class="container container-sm">
-    <div class="page-header-eyebrow">Guides</div>
-    <h1 class="page-header-title">Tutorials</h1>
-    <p class="page-header-subtitle">
+    <div class="page-header-eyebrow" data-i18n="tutorials.guides">Guides</div>
+    <h1 class="page-header-title" data-i18n="tutorials.title">Tutorials</h1>
+    <p class="page-header-subtitle" data-i18n="tutorials.subtitle">
       Practical, step-by-step guides for common workflows in
       computational biology — from raw data to interpretable results.
     </p>
@@ -46,8 +46,7 @@ permalink: /tutorials/
       {% endfor %}
     {% else %}
       <div class="empty-state">
-        <p>Tutorials are being prepared. The first set will cover single-cell
-        quality control, RNA-seq alignment and spatial integration.</p>
+        <p data-i18n="tutorials.empty">Tutorials are being prepared. The first set will cover single-cell quality control, RNA-seq alignment and spatial integration.</p>
       </div>
     {% endif %}
 
