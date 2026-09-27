@@ -1,15 +1,15 @@
 ---
 layout: default
 title: Research Notes
-description: Short, hand-written notes on methodology, reproducibility and the practice of computational research.
+description: Short essays and working notes on methodology, reproducibility and the practice of computational research.
 permalink: /notes/
 ---
 
 <header class="page-header">
   <div class="container container-sm">
-    <div class="page-header-eyebrow">Notebook</div>
-    <h1 class="page-header-title" data-i18n="section.featured">Research Notes</h1>
-    <p class="page-header-subtitle">
+    <div class="page-header-eyebrow" data-i18n="notes.notebook">Notebook</div>
+    <h1 class="page-header-title" data-i18n="notes.title">Research Notes</h1>
+    <p class="page-header-subtitle" data-i18n="notes.subtitle">
       Short essays and working notes on methodology, reproducibility
       and the practice of computational research.
     </p>
@@ -52,18 +52,14 @@ permalink: /notes/
     </div>
   {% else %}
     <div class="empty-state">
-      <p>Notes are being written. The first pieces will cover data
-      leakage in biomedical machine learning, and reproducible
-      pipelines for single-cell analysis.</p>
+      <p data-i18n="notes.empty">Notes are being written. The first pieces will cover data leakage in biomedical machine learning, and reproducible pipelines for single-cell analysis.</p>
     </div>
   {% endif %}
 
 </article>
 
 <style>
-.notes-list {
-  border-top: 1px solid var(--border);
-}
+.notes-list { border-top: 1px solid var(--border); }
 .note-row {
   display: grid;
   grid-template-columns: 110px 1fr 40px;
@@ -113,7 +109,6 @@ html[dir="rtl"] .note-row:hover .note-arrow { transform: translateX(-4px); }
   text-transform: uppercase;
   color: var(--text-muted);
 }
-
 .note-body { min-width: 0; }
 .note-title {
   font-family: var(--font-serif);
@@ -145,7 +140,6 @@ html[lang="fa"] .note-title { font-family: var(--font-fa); font-weight: 700; }
   background: var(--surface-3);
   border-radius: var(--r-xs);
 }
-
 .note-arrow {
   color: var(--text-muted);
   transition: all var(--dur) var(--ease);
