@@ -1,0 +1,57 @@
+<header class="site-header" role="banner">
+  <div class="container header-inner">
+
+    <!-- Logo -->
+    <a href="{{ '/' | relative_url }}" class="logo" aria-label="{{ site.title }}">
+      <span class="logo-mark" aria-hidden="true">C</span>
+      <span class="logo-text">CompBio&nbsp;Lab</span>
+    </a>
+
+    <!-- Main nav -->
+    <nav class="main-nav" role="navigation" aria-label="Main">
+      {% for item in site.data.navigation.main %}
+        <a href="{{ item.url | relative_url }}"
+           class="nav-link"
+           data-i18n="nav.{{ item.key }}">
+          {{ item[site.default_lang] | default: item.en }}
+        </a>
+      {% endfor %}
+    </nav>
+
+    <!-- Right actions -->
+    <div class="header-actions">
+
+      <!-- Language switch -->
+      <div class="lang-switch" role="group" aria-label="Language">
+        {% for lang in site.languages %}
+          <button
+            type="button"
+            data-lang="{{ lang.code }}"
+            class="{% if lang.code == site.default_lang %}active{% endif %}"
+            title="{{ lang.name }}"
+            aria-label="Switch to {{ lang.name }}">
+            <span class="lang-flag" aria-hidden="true">{{ lang.flag }}</span>
+            <span class="lang-code">{{ lang.code | upcase }}</span>
+          </button>
+        {% endfor %}
+      </div>
+
+      <!-- Theme toggle -->
+      <button
+        type="button"
+        id="theme-toggle"
+        class="theme-toggle"
+        aria-label="Toggle theme"
+        title="Toggle theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"/>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+        </svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+    </div>
+
+  </div>
+</header>
