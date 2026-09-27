@@ -1,28 +1,43 @@
 # ============================================
 #  CompBio Lab — Jekyll Configuration
-#  A quiet, open notebook for computational biology
+#  Trilingual: English · Dansk · فارسی
 # ============================================
 
 title: CompBio Lab
 tagline: Notes on computational biology, research software, and scientific practice
 description: >-
   A practical, open resource for computational biology, bioinformatics
-  and biomedical data analysis — written by hand, in English and Persian.
+  and biomedical data analysis — written by hand, in English, Danish and Persian.
 
-# --- Author / brand ---
 author:
   name: CompBio Lab
   email: hello@example.com
 
+# --- Languages (first = default) ---
+languages:
+  - code: en
+    name: English
+    native: English
+    dir: ltr
+    flag: "🇬🇧"
+  - code: da
+    name: Danish
+    native: Dansk
+    dir: ltr
+    flag: "🇩🇰"
+  - code: fa
+    name: Persian
+    native: فارسی
+    dir: rtl
+    flag: "🇮🇷"
+
+default_lang: en
+
 # --- URLs ---
-# اگر مخزن را comp-bio.github.io ساختید:
 url: "https://<username>.github.io"
 baseurl: ""
 
-# اگر مخزن را با نام دیگری ساختید (مثلاً compbio-lab):
-# baseurl: "/compbio-lab"
-
-# --- Build settings ---
+# --- Build ---
 markdown: kramdown
 highlighter: rouge
 permalink: /notes/:year/:month/:day/:title/
@@ -30,23 +45,17 @@ permalink: /notes/:year/:month/:day/:title/
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    block:
-      line_numbers: false
 
-# --- Plugins (همه در GitHub Pages پشتیبانی می‌شوند) ---
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
 
-# --- Collections ---
 collections:
   tutorials:
     output: true
     permalink: /tutorials/:name/
 
-# --- Defaults ---
 defaults:
   - scope:
       path: ""
@@ -59,11 +68,9 @@ defaults:
     values:
       layout: page
 
-# --- Exclude ---
 exclude:
   - Gemfile
   - Gemfile.lock
-  - node_modules
   - vendor
   - README.md
   - LICENSE
