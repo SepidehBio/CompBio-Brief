@@ -1,8 +1,9 @@
 title: CompBio Brief
-tagline: Brief notes on computational biology, research software, and scientific practice
+tagline: An open resource for computational biology
 description: >-
-  An open notebook on computational biology — tools, datasets, and
-  research notes. Trilingual (EN/DA/FA), built from scratch.
+  Documenting practical knowledge in computational biology, bioinformatics
+  and biomedical data analysis — through concise notes, tools, datasets
+  and reproducible workflows. Trilingual (EN/DA/FA), built from scratch.
 
 author:
   name: CompBio Brief
