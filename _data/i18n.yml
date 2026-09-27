@@ -1,6 +1,12 @@
 en:
   brand.tagline: "An open resource for computational biology"
 
+  nav.tools:     "Tools"
+  nav.tutorials: "Tutorials"
+  nav.datasets:  "Datasets"
+  nav.notes:     "Research Notes"
+  nav.about:     "About"
+
   hero.eyebrow:  "CompBio Brief · Est. 2026"
   hero.title:    "An open resource for computational biology."
   hero.subtitle: "Documenting practical knowledge in computational biology, bioinformatics and biomedical data analysis — written with clarity and care."
@@ -25,18 +31,28 @@ en:
   section.tutorials.empty: "Tutorials are being prepared. The first set will cover single-cell quality control, RNA-seq alignment and spatial integration."
 
   tools.count: "tools"
+  tools.title: "Tools"
+  tools.subtitle: "A curated list of software for computational biology — sequence analysis, single-cell, variant analysis and machine learning."
+  tools.directory: "Directory"
+  tools.docs: "Docs"
+  tools.github: "GitHub"
 
   datasets.col.name: "Dataset"
   datasets.col.organism: "Organism"
   datasets.col.type: "Data type"
   datasets.col.access: "Access"
+  datasets.title: "Datasets"
+  datasets.subtitle: "A short list of open datasets commonly used in computational biology and biomedical data analysis."
+  datasets.catalogue: "Catalogue"
+  datasets.h.using: "On using public data"
 
   home.closing.title: "Built for practical computational work"
   home.closing.body: "CompBio Brief brings together concise notes, curated tools, public datasets and practical workflows for computational biology and biomedical data analysis."
   home.closing.body2: "The focus is simple: useful information, clear explanations and reproducible practice."
 
   about.title: "About"
-  about.subtitle: "An open resource for computational biology — documenting practical knowledge, tools, datasets and reproducible workflows."
+  about.heading: "An open resource for computational biology"
+  about.subtitle: "CompBio Brief is an open space for documenting practical knowledge in computational biology, bioinformatics and biomedical data analysis."
   about.h.what: "What this is"
   about.h.why: "Why it exists"
   about.h.scope: "Scope"
@@ -44,38 +60,28 @@ en:
   about.h.open: "Open by design"
 
   contact.title: "Contact"
-  contact.subtitle: "How to reach CompBio Brief — email, GitHub and Mastodon."
+  contact.heading: "Get in touch"
+  contact.subtitle: "Corrections, suggestions and collaborations are welcome. The fastest way to reach the author is by email."
   contact.h.email: "Email"
   contact.h.code: "Code & issues"
   contact.h.response: "Response time"
-
-  tools.title: "Tools"
-  tools.subtitle: "A curated list of software for computational biology — sequence analysis, single-cell, variant analysis and machine learning."
-  tools.directory: "Directory"
-  tools.docs: "Docs"
-  tools.github: "GitHub"
-
-  datasets.title: "Datasets"
-  datasets.subtitle: "A short list of open datasets commonly used in computational biology and biomedical data analysis."
-  datasets.catalogue: "Catalogue"
-  datasets.h.using: "On using public data"
+  contact.h.not: "What is not offered here"
 
   tutorials.title: "Tutorials"
+  tutorials.heading: "Tutorials"
   tutorials.subtitle: "Practical, step-by-step guides for common workflows in computational biology — from raw data to interpretable results."
   tutorials.guides: "Guides"
-  tutorials.empty: "Tutorials are being prepared."
+  tutorials.empty: "Tutorials are being prepared. The first set will cover single-cell quality control, RNA-seq alignment and spatial integration."
 
   notes.title: "Research Notes"
+  notes.heading: "Research Notes"
   notes.subtitle: "Short essays and working notes on methodology, reproducibility and the practice of computational research."
   notes.notebook: "Notebook"
-  notes.empty: "Notes are being written."
+  notes.empty: "Notes are being written. The first pieces will cover data leakage in biomedical machine learning, and reproducible pipelines for single-cell analysis."
 
   footer.copy:    "© 2026 CompBio Brief · Built with care."
   footer.online:  "readers online now"
   footer.rights:  "All content licensed CC BY 4.0 · Code MIT"
-
-  meta.theme.toggle:  "Toggle theme"
-  meta.lang.switch:   "Change language"
 
   categories:
     sequence-analysis:
@@ -93,6 +99,12 @@ en:
 
 da:
   brand.tagline: "En åben ressource for beregningsbiologi"
+
+  nav.tools:     "Værktøjer"
+  nav.tutorials: "Vejledninger"
+  nav.datasets:  "Datasæt"
+  nav.notes:     "Forskningsnoter"
+  nav.about:     "Om"
 
   hero.eyebrow:  "CompBio Brief · Etableret 2026"
   hero.title:    "En åben ressource for beregningsbiologi."
@@ -118,18 +130,28 @@ da:
   section.tutorials.empty: "Vejledninger er under udarbejdelse. Det første sæt vil dække kvalitetskontrol af enkeltceller, RNA-seq-alignment og spatial integration."
 
   tools.count: "værktøjer"
+  tools.title: "Værktøjer"
+  tools.subtitle: "En kurateret liste over software til beregningsbiologi — sekvensanalyse, enkeltceller, variantanalyse og machine learning."
+  tools.directory: "Katalog"
+  tools.docs: "Dokumentation"
+  tools.github: "GitHub"
 
   datasets.col.name: "Datasæt"
   datasets.col.organism: "Organisme"
   datasets.col.type: "Datatype"
   datasets.col.access: "Adgang"
+  datasets.title: "Datasæt"
+  datasets.subtitle: "En kort liste over åbne datasæt, der almindeligvis bruges i beregningsbiologi og biomedicinsk dataanalyse."
+  datasets.catalogue: "Katalog"
+  datasets.h.using: "Om brug af offentlige data"
 
   home.closing.title: "Bygget til praktisk beregningsarbejde"
   home.closing.body: "CompBio Brief samler korte noter, udvalgte værktøjer, offentlige datasæt og praktiske arbejdsgange til beregningsbiologi og biomedicinsk dataanalyse."
   home.closing.body2: "Fokus er enkelt: brugbar information, klare forklaringer og reproducerbar praksis."
 
   about.title: "Om"
-  about.subtitle: "En åben ressource for beregningsbiologi — dokumentation af praktisk viden, værktøjer, datasæt og reproducerbare arbejdsgange."
+  about.heading: "En åben ressource for beregningsbiologi"
+  about.subtitle: "CompBio Brief er et åbent rum til dokumentation af praktisk viden inden for beregningsbiologi, bioinformatik og biomedicinsk dataanalyse."
   about.h.what: "Hvad dette er"
   about.h.why: "Hvorfor det findes"
   about.h.scope: "Omfang"
@@ -137,38 +159,28 @@ da:
   about.h.open: "Åben af design"
 
   contact.title: "Kontakt"
-  contact.subtitle: "Sådan kommer du i kontakt med CompBio Brief — e-mail, GitHub og Mastodon."
+  contact.heading: "Kontakt os"
+  contact.subtitle: "Rettelser, forslag og samarbejder er velkomne. Den hurtigste måde at nå forfatteren er via e-mail."
   contact.h.email: "E-mail"
   contact.h.code: "Kode & problemer"
   contact.h.response: "Svartid"
-
-  tools.title: "Værktøjer"
-  tools.subtitle: "En kurateret liste over software til beregningsbiologi — sekvensanalyse, enkeltceller, variantanalyse og machine learning."
-  tools.directory: "Katalog"
-  tools.docs: "Dokumentation"
-  tools.github: "GitHub"
-
-  datasets.title: "Datasæt"
-  datasets.subtitle: "En kort liste over åbne datasæt, der almindeligvis bruges i beregningsbiologi og biomedicinsk dataanalyse."
-  datasets.catalogue: "Katalog"
-  datasets.h.using: "Om brug af offentlige data"
+  contact.h.not: "Hvad der ikke tilbydes her"
 
   tutorials.title: "Vejledninger"
+  tutorials.heading: "Vejledninger"
   tutorials.subtitle: "Praktiske trin-for-trin-guides til almindelige arbejdsgange i beregningsbiologi — fra rådata til fortolkbare resultater."
   tutorials.guides: "Guides"
-  tutorials.empty: "Vejledninger er under udarbejdelse."
+  tutorials.empty: "Vejledninger er under udarbejdelse. Det første sæt vil dække kvalitetskontrol af enkeltceller, RNA-seq-alignment og spatial integration."
 
   notes.title: "Forskningsnoter"
+  notes.heading: "Forskningsnoter"
   notes.subtitle: "Korte essays og arbejdsnoter om metode, reproducerbarhed og praksis i beregningsorienteret forskning."
   notes.notebook: "Notesbog"
-  notes.empty: "Noter er under udarbejdelse."
+  notes.empty: "Noter er under udarbejdelse. De første stykker vil dække datalækage i biomedicinsk machine learning og reproducerbare pipelines til enkeltcelleanalyse."
 
   footer.copy:    "© 2026 CompBio Brief · Bygget med omhu."
   footer.online:  "læsere online nu"
   footer.rights:  "Alt indhold under CC BY 4.0 · Kode under MIT"
-
-  meta.theme.toggle:  "Skift tema"
-  meta.lang.switch:   "Skift sprog"
 
   categories:
     sequence-analysis:
@@ -186,6 +198,12 @@ da:
 
 fa:
   brand.tagline: "منبعی باز برای بیولوژی محاسباتی"
+
+  nav.tools:     "ابزارها"
+  nav.tutorials: "آموزش‌ها"
+  nav.datasets:  "داده‌ها"
+  nav.notes:     "یادداشت‌ها"
+  nav.about:     "درباره"
 
   hero.eyebrow:  "CompBio Brief · از ۲۰۲۶"
   hero.title:    "منبعی باز برای بیولوژی محاسباتی."
@@ -211,18 +229,28 @@ fa:
   section.tutorials.empty: "آموزش‌ها در حال آماده‌سازی هستند. مجموعه‌ی اول شامل کنترل کیفیت تک‌سلولی، هم‌ترازی RNA-seq و ادغام فضایی خواهد بود."
 
   tools.count: "ابزار"
+  tools.title: "ابزارها"
+  tools.subtitle: "فهرست گزیده‌ای از نرم‌افزارهای بیولوژی محاسباتی — تحلیل توالی، تک‌سلولی، تحلیل واریانت و یادگیری ماشین."
+  tools.directory: "فهرست"
+  tools.docs: "مستندات"
+  tools.github: "گیت‌هاب"
 
   datasets.col.name: "داده"
   datasets.col.organism: "ارگانیسم"
   datasets.col.type: "نوع داده"
   datasets.col.access: "دسترسی"
+  datasets.title: "داده‌ها"
+  datasets.subtitle: "فهرست کوتاهی از داده‌های باز پرکاربرد در بیولوژی محاسباتی و تحلیل داده‌های زیست‌پزشکی."
+  datasets.catalogue: "کاتالوگ"
+  datasets.h.using: "درباره‌ی استفاده از داده‌های عمومی"
 
   home.closing.title: "ساخته‌شده برای کار محاسباتی کاربردی"
   home.closing.body: "CompBio Brief یادداشت‌های کوتاه، ابزارهای گزیده، داده‌های عمومی و گردش‌کارهای کاربردی را برای بیولوژی محاسباتی و تحلیل داده‌های زیست‌پزشکی گرد هم می‌آورد."
   home.closing.body2: "تمرکز ساده است: اطلاعات مفید، توضیح روشن و رویه‌ی بازتولیدپذیر."
 
   about.title: "درباره"
-  about.subtitle: "منبعی باز برای بیولوژی محاسباتی — مستندسازی دانش کاربردی، ابزارها، داده‌ها و گردش‌کارهای بازتولیدپذیر."
+  about.heading: "منبعی باز برای بیولوژی محاسباتی"
+  about.subtitle: "CompBio Brief فضایی باز برای مستندسازی دانش کاربردی در بیولوژی محاسباتی، بیوانفورماتیک و تحلیل داده‌های زیست‌پزشکی است."
   about.h.what: "این چیست"
   about.h.why: "چرا وجود دارد"
   about.h.scope: "دامنه"
@@ -230,38 +258,28 @@ fa:
   about.h.open: "باز از پایه"
 
   contact.title: "تماس"
-  contact.subtitle: "راه‌های ارتباط با CompBio Brief — ایمیل، گیت‌هاب و مستودون."
+  contact.heading: "در تماس باشید"
+  contact.subtitle: "اصلاحات، پیشنهادها و همکاری‌ها پذیرفته می‌شوند. سریع‌ترین راه ارتباط، ایمیل است."
   contact.h.email: "ایمیل"
   contact.h.code: "کد و مسائل"
   contact.h.response: "زمان پاسخ"
-
-  tools.title: "ابزارها"
-  tools.subtitle: "فهرست گزیده‌ای از نرم‌افزارهای بیولوژی محاسباتی — تحلیل توالی، تک‌سلولی، تحلیل واریانت و یادگیری ماشین."
-  tools.directory: "فهرست"
-  tools.docs: "مستندات"
-  tools.github: "گیت‌هاب"
-
-  datasets.title: "داده‌ها"
-  datasets.subtitle: "فهرست کوتاهی از داده‌های باز پرکاربرد در بیولوژی محاسباتی و تحلیل داده‌های زیست‌پزشکی."
-  datasets.catalogue: "کاتالوگ"
-  datasets.h.using: "درباره‌ی استفاده از داده‌های عمومی"
+  contact.h.not: "آنچه اینجا ارائه نمی‌شود"
 
   tutorials.title: "آموزش‌ها"
+  tutorials.heading: "آموزش‌ها"
   tutorials.subtitle: "راهنماهای گام‌به‌گام برای گردش‌کارهای رایج در بیولوژی محاسباتی — از داده‌ی خام تا نتایج قابل تفسیر."
   tutorials.guides: "راهنماها"
-  tutorials.empty: "آموزش‌ها در حال آماده‌سازی هستند."
+  tutorials.empty: "آموزش‌ها در حال آماده‌سازی هستند. مجموعه‌ی اول شامل کنترل کیفیت تک‌سلولی، هم‌ترازی RNA-seq و ادغام فضایی خواهد بود."
 
   notes.title: "یادداشت‌های پژوهشی"
+  notes.heading: "یادداشت‌های پژوهشی"
   notes.subtitle: "جستارهای کوتاه و یادداشت‌های کاری درباره‌ی روش‌شناسی، بازتولیدپذیری و رویه‌ی پژوهش محاسباتی."
   notes.notebook: "دفترچه"
-  notes.empty: "یادداشت‌ها در حال نوشته شدن هستند."
+  notes.empty: "یادداشت‌ها در حال نوشته شدن هستند. نخستین نوشته‌ها شامل نشت داده در یادگیری ماشین زیست‌پزشکی و گردش‌کارهای بازتولیدپذیر تک‌سلولی خواهند بود."
 
   footer.copy:    "© ۲۰۲۶ CompBio Brief · با دقت ساخته شده."
   footer.online:  "خواننده آنلاین"
   footer.rights:  "همه‌ی محتوا تحت CC BY 4.0 · کد تحت MIT"
-
-  meta.theme.toggle:  "تغییر پوسته"
-  meta.lang.switch:   "تغییر زبان"
 
   categories:
     sequence-analysis:
