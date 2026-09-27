@@ -11,7 +11,7 @@
         <a href="{{ item.url | relative_url }}"
            class="nav-link"
            data-i18n="nav.{{ item.key }}">
-          {{ item[site.default_lang] | default: item.en }}
+          {{ item.en }}
         </a>
       {% endfor %}
     </nav>
