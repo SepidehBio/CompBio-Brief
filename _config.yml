@@ -27,8 +27,8 @@ languages:
 
 default_lang: en
 
-url: "https://<username>.github.io"
-baseurl: "/compbio-brief"
+url: "https://SepidehBio.github.io"
+baseurl: "/CompBio-Brief"
 
 markdown: kramdown
 highlighter: rouge
