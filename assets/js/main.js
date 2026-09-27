@@ -1,5 +1,5 @@
 /* ============================================================
-   CompBio Lab — Main Runtime
+   CompBio Brief — Main Runtime
    Language · Theme · Online counter · Reveal animations
    ============================================================ */
 
@@ -31,6 +31,16 @@
   const prefersReducedMotion = () =>
     window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
+  function getPath(obj, path) {
+    const parts = path.split(".");
+    let val = obj;
+    for (const p of parts) {
+      if (val && typeof val === "object" && p in val) val = val[p];
+      else return null;
+    }
+    return val;
+  }
+
   /* ----------------------------------------------------------
      Language detection (automatic)
        1. Saved value in localStorage
@@ -38,11 +48,9 @@
        3. Fallback to default
      ---------------------------------------------------------- */
   function detectLanguage() {
-    // 1. saved
     const saved = localStorage.getItem(STORAGE_LANG);
     if (saved && SUPPORTED.has(saved)) return saved;
 
-    // 2. browser
     const prefs = [
       ...(navigator.languages || []),
       navigator.language,
@@ -51,13 +59,25 @@
 
     for (const raw of prefs) {
       const code = String(raw).toLowerCase();
-      // exact or prefix match (e.g. "fa-IR" → "fa", "da-DK" → "da")
       const short = code.split("-")[0];
       if (SUPPORTED.has(short)) return short;
     }
 
-    // 3. fallback
     return DEFAULT_LANG;
+  }
+
+  /* ----------------------------------------------------------
+     Content translations (categories inside i18n dict)
+     ---------------------------------------------------------- */
+  function applyContentTranslations(lang) {
+    const dict = I18N[lang] || {};
+
+    $$("[data-content]").forEach(el => {
+      const path = el.getAttribute("data-content");
+      if (!path) return;
+      const val = getPath(dict, path);
+      if (typeof val === "string") el.textContent = val;
+    });
   }
 
   /* ----------------------------------------------------------
@@ -69,12 +89,11 @@
     const dir = RTL_LANGS.has(lang) ? "rtl" : "ltr";
     const html = document.documentElement;
 
-    // html attributes
     html.setAttribute("lang", lang);
     html.setAttribute("dir", dir);
 
-    // translation strings
     const dict = I18N[lang] || {};
+
     $$("[data-i18n]").forEach(el => {
       const key = el.getAttribute("data-i18n");
       if (!key) return;
@@ -83,27 +102,24 @@
       else if (val != null) el.textContent = String(val);
     });
 
-    // nav links (fall back to _data/navigation via existing markup)
-    // Only update ones that explicitly carry data-nav-key
     $$("[data-nav-key]").forEach(el => {
       const key = `nav.${el.getAttribute("data-nav-key")}`;
       const val = dict[key];
       if (val) el.textContent = val;
     });
 
-    // language switcher button state
+    applyContentTranslations(lang);
+
     $$(".lang-switch button").forEach(btn => {
       const isActive = btn.dataset.lang === lang;
       btn.classList.toggle("active", isActive);
       btn.setAttribute("aria-pressed", String(isActive));
     });
 
-    // persist
     if (persist) {
       try { localStorage.setItem(STORAGE_LANG, lang); } catch (_) {}
     }
 
-    // dispatch event for other scripts
     window.dispatchEvent(new CustomEvent("lang:changed", { detail: { lang, dir } }));
   }
 
@@ -123,11 +139,9 @@
     if (theme !== "light" && theme !== "dark") theme = "light";
     document.documentElement.setAttribute("data-theme", theme);
 
-    // update theme-color for browser UI
     const meta = document.querySelector('meta[name="theme-color"]');
     if (meta) meta.setAttribute("content", theme === "dark" ? "#0c0e0d" : "#0e3b2e");
 
-    // update toggle aria
     const tgl = $("#theme-toggle");
     if (tgl) {
       tgl.setAttribute("aria-pressed", String(theme === "dark"));
@@ -152,10 +166,10 @@
      ---------------------------------------------------------- */
   const OnlineCounter = (() => {
     const BASE = 11;
-    const AMPLITUDE = 4;         // ±4 readers
-    const PERIOD = 45000;        // smooth wave over 45s
-    const JITTER = 2;            // small random noise
-    const UPDATE_MS = 18000;     // visual refresh every 18s
+    const AMPLITUDE = 4;
+    const PERIOD = 45000;
+    const JITTER = 2;
+    const UPDATE_MS = 18000;
 
     let current = BASE;
     let timer = null;
@@ -177,7 +191,6 @@
       const delta = to - from;
       function step(now) {
         const p = Math.min((now - start) / duration, 1);
-        // ease-out cubic
         const eased = 1 - Math.pow(1 - p, 3);
         el.textContent = String(Math.round(from + delta * eased));
         if (p < 1) requestAnimationFrame(step);
@@ -196,7 +209,6 @@
 
     function start() {
       update();
-      // slight initial delay so the first paint settles
       timer = setInterval(update, UPDATE_MS);
     }
 
@@ -205,7 +217,6 @@
       timer = null;
     }
 
-    // update when tab becomes visible again (feels alive)
     document.addEventListener("visibilitychange", () => {
       if (document.visibilityState === "visible") update();
     });
@@ -242,7 +253,7 @@
   }
 
   /* ----------------------------------------------------------
-     Active nav link on scroll (for anchors on home)
+     Active nav link on scroll
      ---------------------------------------------------------- */
   function initActiveNav() {
     const links = $$(".main-nav .nav-link");
@@ -296,7 +307,6 @@
         behavior: prefersReducedMotion() ? "auto" : "smooth",
       });
 
-      // update URL without jump
       history.replaceState(null, "", `#${id}`);
     });
   }
@@ -308,7 +318,6 @@
      ---------------------------------------------------------- */
   function initShortcuts() {
     document.addEventListener("keydown", e => {
-      // skip when typing
       const t = e.target;
       if (t && (t.tagName === "INPUT" || t.tagName === "TEXTAREA" || t.isContentEditable)) return;
 
@@ -329,7 +338,7 @@
   }
 
   /* ----------------------------------------------------------
-     External links → open in new tab, with security attrs
+     External links
      ---------------------------------------------------------- */
   function initExternalLinks() {
     const host = window.location.hostname;
@@ -348,34 +357,26 @@
      Boot
      ---------------------------------------------------------- */
   function boot() {
-    // Language — detect automatically
     applyLanguage(detectLanguage(), { persist: true });
-
-    // Theme
     applyTheme(detectTheme(), { persist: false });
 
-    // Bind language buttons
     $$(".lang-switch button").forEach(btn => {
       btn.addEventListener("click", () => {
         applyLanguage(btn.dataset.lang);
       });
     });
 
-    // Bind theme toggle
     const toggle = $("#theme-toggle");
     if (toggle) toggle.addEventListener("click", toggleTheme);
 
-    // Features
     initReveal();
     initActiveNav();
     initSmoothAnchors();
     initShortcuts();
     initExternalLinks();
 
-    // Start online counter
     OnlineCounter.start();
 
-    // Follow system theme changes (only if user hasn't chosen)
     const media = window.matchMedia("(prefers-color-scheme: dark)");
     media.addEventListener?.("change", e => {
       if (!localStorage.getItem(STORAGE_THEME)) {
@@ -383,7 +384,6 @@
       }
     });
 
-    // Cleanup
     window.addEventListener("beforeunload", () => OnlineCounter.stop(), { once: true });
   }
 
